@@ -1,0 +1,20 @@
+## Github Issues
+
+### Opened
+
+{{#each openedIssues~}}
+- **{{repo}}**: {{title}} ([#{{number}}]({{url}}))
+{{~#unless comments}}
+  <br>☛ **awaiting response**
+{{/unless ~}}
+{{else~}}
+no new issues.
+{{~/each}}
+
+### Closed
+
+{{#each closedIssues ~}}
+- **{{repo}}**: {{title}} ([#{{number}}]({{url}}))
+{{else~}}
+no issues closed.
+{{/each~}}

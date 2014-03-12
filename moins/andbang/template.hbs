@@ -1,0 +1,18 @@
+## &!
+
+{{#each members}}
+<img src="{{picUrl}}" style="float:left;margin: 0 10px 10px 0; border-radius: 36px">
+### {{name}}, last seen {{lastLogin}}
+
+{{#if activeTask~}}
+currently working on:
+{{activeTask}}
+{{~/if}}
+
+**shipped**:<br>
+{{~#each shippedTasks}}
+- {{.}}
+{{~else}}
+nada.
+{{/each}}
+{{/each}}

@@ -1,0 +1,19 @@
+{
+  "name": "hoodie-plugin-moin",
+  "description": "collects all the things.",
+  "dependencies": {
+    "moment": "~2.5.1",
+    "async": "~0.2.9",
+    "octonode": "git://github.com/pksunkara/octonode.git",
+    "handlebars": "~1.3.0",
+    "marked": "~0.3.0",
+    "request": "~2.33.0",
+    "cheerio": "~0.13.1",
+    "numeral": "~1.5.3",
+    "node-gauges": "0.0.12",
+    "twitter-1.1": "~0.1.18",
+    "andbang": "~0.2.0"
+  },
+  "version": "0.0.0",
+  "main": "worker.js"
+}

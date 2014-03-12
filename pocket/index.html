@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="/styles/app.css">
+  </head>
+  <body>
+
+    <div>
+      <div class="module content centered">
+        <h2 class="top">Moins</h2>
+
+        <p>Confige them all, one moin at a time!</p>
+
+        <div class="module-content">
+            <div class="module">
+              <form id="moinForm" class="email form-horizontal" action="">
+
+                <legend>E-Mail Configuration</legend>
+                <span class="description">sender &amp; receipients</span>
+                <section>
+                  <div class="control-group">
+                    <label>
+                      FROM
+                    </label>
+                    <div class="controls">
+                      <input name="email_from" type="text" placeholder="moin@example.com">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label>
+                      REPLY TO <small>optional</small>
+                    </label>
+                    <div class="controls">
+                      <input name="email_reply_to" type="text" placeholder="questions@example.com">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label>
+                      TO
+                    </label>
+                    <div class="controls">
+                      <input name="email_to" type="text" placeholder="joe@example.com,jane@example.com">
+                    </div>
+                  </div>
+                </section>
+
+                <legend>Cat</legend>
+                <span class="description">No settings needed, just enjoy :)</span>
+                <p>
+                  The Cat Moin loads a random cat gif from http://thecatapi.com:<br>
+                  <img src="http://thecatapi.com/api/images/get?format=src&type=gif&category=funny" />
+                </p>
+
+                <p>
+                  Accounts are optional, we could add fields for that.
+                </p>
+
+                <legend>Gauges</legend>
+                <span class="description">Loads stats from <a href="https://secure.gaug.es/dashboard">gauge.es</a></span>
+                <section>
+                  <div class="control-group">
+                    <label>
+                      API Key
+                    </label>
+                    <div class="controls">
+                      <input name="gauges.apikey" type="text" pattern="[0-9a-f]{32}" placeholder="39ce1477a3cab278043d94549883ee79">
+                    </div>
+                    <p>Find at <a href="https://secure.gaug.es/dashboard#/account/clients">My Account → API Keys</a></p>
+                  </div>
+                </section>
+
+                <legend>&amp;!</legend>
+                <span class="description">Load ships from <a href="https://secure.gaug.es/dashboard">andbang.com</a></span>
+                <section>
+                  <div class="control-group">
+                    <label>
+                      Token
+                    </label>
+                    <div class="controls">
+                      <input name="andbang.apikey" type="text" placeholder="e7dd83a7a9afde1821841bd81733f799b1b532abd29b0212f88b8044cd41791f95bb74b5b56621c3b9da71c09b727aa0841bbdd4ae16e77fa9ca6263b108b236">
+                    </div>
+                  </div>
+                </section>
+
+                <legend>Github Organization Issues</legend>
+                <span class="description">No settings needed</span>
+                <p>
+                  The Github Organization Issues Moin shows newly opened or closed issues from a
+                  GitHub organization defined in the moin task in
+                  the <code>organizationName</code> property.
+                </p>
+
+                <legend>GitTip</legend>
+                <span class="description">No settings needed</span>
+                <p>
+                  The GitTip Moin shows the receiving ammount for the GitHub organization
+                  defined in the moin task's <code>organizationName</code> property.
+                </p>
+
+                <legend>Twitter</legend>
+                <span class="description">Searches for keywords</span>
+                <section>
+                  <div class="control-group">
+                    <label>
+                      Consumer Key
+                    </label>
+                    <div class="controls">
+                      <input name="twitter.consumer_key" type="text" placeholder="d0vDQSomMPVMJZDpqAJmA">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label>
+                      Consumer Secret
+                    </label>
+                    <div class="controls">
+                      <input name="twitter.consumer_secret" type="text" placeholder="KKefXXi8Wn2OzSaIANjkxenO3lSJlDipfbRnzgQ5BiY">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label>
+                      Access Token Key
+                    </label>
+                    <div class="controls">
+                      <input name="twitter.access_token_key" type="text" placeholder="11744832-xZh24qrwjMADqbi4adZCjROg31s9pfSvF3vGnjttO">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label>
+                      Access Token Key
+                    </label>
+                    <div class="controls">
+                      <input name="twitter.access_token_secret" type="text" placeholder="kzqN07lOh8L50rkcNOMXu2EbJgNlHraIGuBFepDXMjmey">
+                    </div>
+                  </div>
+                </section>
+
+                <section>
+                  <label></label>
+                  <div class="controls">
+                    <button class="submit btn" type="submit">Submit</button>
+                    <span class="submitMessage"></span>
+                  </div>
+                </section>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="jquery-2.0.3.min.js"></script>
+    <script src="underscore-min.js"></script>
+    <script src="couchr.js"></script>
+    <script src="moin.js"></script>
+
+  </body>
+</html>

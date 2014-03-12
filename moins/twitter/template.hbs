@@ -1,0 +1,11 @@
+## Twitter
+
+{{#each .~}}
+<p style="clear:left;">
+  <small>
+  <img src="{{user.profile_image_url}}" style="float:left;margin: 0 10px 10px 0; border-radius: 36px">
+  {{user.name}} (<a href="{{user.url}}">@{{user.screen_name}}</a>) from {{user.location}} to {{user.followers_count}} followers
+  </small><br>
+  {{{text}}}
+</p>
+{{/each}}

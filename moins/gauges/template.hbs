@@ -1,0 +1,13 @@
+## Gauges
+
+{{#each .~}}
+  ### {{title}}
+
+  Views: [{{yesterday.views}}]({{urls.self}})<br>
+  People: [{{yesterday.people}}]({{urls.self}})<br>
+  [Referrers]({{urls.referrers}}):
+
+  {{#each referrers~}}
+  - [{{host}}{{path}}]({{url}}) {{views}}
+  {{/each}}
+{{/each}}
