@@ -21,8 +21,11 @@ function twitterMoin(hoodie, config, callback) {
     access_token_key: hoodie.config.get('twitter.access_token_key'),
     access_token_secret: hoodie.config.get('twitter.access_token_secret')
   });
-  var keywords = hoodie.config.get('keywords').split(/\n/);
+  var keywords = (hoodie.config.get('twitter.keywords') || '').split(/\n/);
   var keywordsRegex = new RegExp('('+keywords.join('|').replace(/"/g, '').replace(/\./g, '\\.')+')', 'gi');
+
+  console.log(JSON.stringify(keywords, '', '  '));
+  console.log( hoodie.config.get('twitter.consumer_key') );
 
   twit.get('/search/tweets.json', {
     since:day,
