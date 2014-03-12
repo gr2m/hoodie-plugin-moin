@@ -18,7 +18,7 @@ var githubOrganizationIssues = require('./moins/github-organization-issues');
 var moins = [cat, gittip, twitter, /*andbang, */gauges, githubOrganizationIssues];
 
 module.exports = function(hoodie, doneCallback) {
-  hoodie.task.on('add:mointask', handleNewMoinTask);
+  hoodie.task.on('mointask:add', handleNewMoinTask);
 
   function handleNewMoinTask(dbName, moinTask) {
     console.log('new moin task!', moinTask);
